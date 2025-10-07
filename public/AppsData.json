@@ -1,0 +1,506 @@
+[
+  {
+    "image": "https://i.ibb.co/nqD74xv8/alexander-shatov-qsu-ER9x-YOY-unsplash-1.jpg",
+    "title": "WhatsApp Messenger",
+    "companyName": "WhatsApp LLC",
+    "id": 1,
+    "description": "WhatsApp is a free messaging app used by over 2 billion people in more than 180 countries. It offers secure text messaging, voice and video calls, document sharing, and group chats with end-to-end encryption. The app requires an internet connection and works across multiple platforms including Android, iOS, and web browsers.",
+    "size": 85,
+    "reviews": 158,
+    "ratingAvg": 4.2,
+    "downloads": 20,
+    "ratings": [
+      { "name": "1 star", "count": 12 },
+      { "name": "2 star", "count": 8 },
+      { "name": "3 star", "count": 15 },
+      { "name": "4 star", "count": 35 },
+      { "name": "5 star", "count": 88 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co/Xkt9fR64/eyestetix-studio-z-ENFn-In-KK2g-unsplash.jpg",
+    "title": "Facebook",
+    "companyName": "Meta Platforms, Inc.",
+    "id": 2,
+    "description": "Facebook helps you connect and share with people in your life. The world's largest social network allows users to share updates, photos, videos, join groups, follow pages, and stay connected with friends and family. Features include News Feed, Stories, Marketplace, and events while maintaining privacy controls and security features.",
+    "size": 92,
+    "reviews": 132,
+    "ratingAvg": 3.9,
+    "downloads": 50,
+    "ratings": [
+      { "name": "1 star", "count": 18 },
+      { "name": "2 star", "count": 12 },
+      { "name": "3 star", "count": 20 },
+      { "name": "4 star", "count": 30 },
+      { "name": "5 star", "count": 52 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co/35Hsjkk2/alexander-shatov-t-F3vug2-Fh-Q-unsplash.jpg",
+    "title": "Instagram",
+    "companyName": "Instagram",
+    "id": 3,
+    "description": "Instagram is a free photo and video sharing app available on Apple iOS, Android, and Windows Phone. Users can upload photos and videos, follow other users' feeds, and share content to other social networks. Features include Stories, Reels, IGTV, direct messaging, and various creative filters and editing tools for enhancing visual content.",
+    "size": 78,
+    "reviews": 121,
+    "ratingAvg": 4.1,
+    "downloads": 50,
+    "ratings": [
+      { "name": "1 star", "count": 10 },
+      { "name": "2 star", "count": 7 },
+      { "name": "3 star", "count": 15 },
+      { "name": "4 star", "count": 32 },
+      { "name": "5 star", "count": 57 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co/XfTj1JdD/alexander-shatov-I4p0-Fcj-DBJI-unsplash.jpg",
+    "title": "TikTok",
+    "companyName": "TikTok Pte. Ltd.",
+    "id": 4,
+    "description": "TikTok is the leading destination for short-form mobile video. The app enables users to create and share 15-second to 3-minute videos with special effects, filters, music, and soundtracks. It has become a global platform for creative expression, entertainment, and community building with trending challenges, dances, and viral content across various genres.",
+    "size": 210,
+    "reviews": 98,
+    "ratingAvg": 4.0,
+    "downloads": 30,
+    "ratings": [
+      { "name": "1 star", "count": 9 },
+      { "name": "2 star", "count": 6 },
+      { "name": "3 star", "count": 12 },
+      { "name": "4 star", "count": 25 },
+      { "name": "5 star", "count": 46 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co/Ldx8KrKN/dima-solomin-4-Bb-IPL8-KOI-unsplash.jpg",
+    "title": "Telegram",
+    "companyName": "Telegram FZ-LLC",
+    "id": 5,
+    "description": "Telegram is a cloud-based instant messaging and voice over IP service known for its focus on speed and security. It offers secret chats with end-to-end encryption, large group capacities up to 200,000 members, file sharing up to 2GB, and channels for broadcasting to unlimited audiences. The app is free and available across multiple platforms.",
+    "size": 65,
+    "reviews": 67,
+    "ratingAvg": 4.4,
+    "downloads": 10,
+    "ratings": [
+      { "name": "1 star", "count": 3 },
+      { "name": "2 star", "count": 2 },
+      { "name": "3 star", "count": 5 },
+      { "name": "4 star", "count": 15 },
+      { "name": "5 star", "count": 42 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co/0jb6nx8c/alexander-shatov-f-Rjjn-N-8njo-unsplash.jpg",
+    "title": "Snapchat",
+    "companyName": "Snap Inc",
+    "id": 6,
+    "description": "Snapchat is a multimedia messaging app used globally for creating and sharing photos, videos, text, and drawings known as Snaps. The app is distinctive for its disappearing content feature, augmented reality lenses and filters, Stories, Spotlight, and Map features. It's particularly popular among younger users for its creative tools and privacy-focused design.",
+    "size": 145,
+    "reviews": 54,
+    "ratingAvg": 3.8,
+    "downloads": 50,
+    "ratings": [
+      { "name": "1 star", "count": 7 },
+      { "name": "2 star", "count": 5 },
+      { "name": "3 star", "count": 8 },
+      { "name": "4 star", "count": 12 },
+      { "name": "5 star", "count": 22 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co/CK0M3nPz/alexander-shatov-k1xf2-D7j-WUs-unsplash.jpg",
+    "title": "Twitter",
+    "companyName": "X Corp.",
+    "id": 7,
+    "description": "Twitter is a microblogging and social networking service where users post and interact with messages known as tweets. The platform serves as a real-time information network connecting users to breaking news, entertainment, sports, politics, and their interests. Features include trending topics, hashtags, retweets, and direct messaging for public conversations and private communications.",
+    "size": 88,
+    "reviews": 76,
+    "ratingAvg": 3.7,
+    "downloads": 10,
+    "ratings": [
+      { "name": "1 star", "count": 10 },
+      { "name": "2 star", "count": 8 },
+      { "name": "3 star", "count": 12 },
+      { "name": "4 star", "count": 18 },
+      { "name": "5 star", "count": 28 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co/gbGGjC9F/alexander-shatov-9-Zjd7-PE-FRM-unsplash.jpg",
+    "title": "LinkedIn",
+    "companyName": "LinkedIn Corporation",
+    "id": 8,
+    "description": "LinkedIn is the world's largest professional network with nearly 800 million members in more than 200 countries worldwide. The platform connects professionals to make them more productive and successful while providing access to knowledge, insights, and opportunities. Features include job searching, professional networking, content sharing, and learning through LinkedIn Learning courses.",
+    "size": 95,
+    "reviews": 43,
+    "ratingAvg": 4.2,
+    "downloads": 30,
+    "ratings": [
+      { "name": "1 star", "count": 3 },
+      { "name": "2 star", "count": 2 },
+      { "name": "3 star", "count": 5 },
+      { "name": "4 star", "count": 12 },
+      { "name": "5 star", "count": 21 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co/PZp1qmKn/alexander-shatov-w-qqwn5-O-4-I-unsplash-1.jpg",
+    "title": "Spotify",
+    "companyName": "Spotify AB",
+    "id": 9,
+    "description": "Spotify is a digital music, podcast, and video streaming service that gives you access to millions of songs and other content from creators all over the world. The service offers both free and premium subscription options, personalized playlists, discovery features, and the ability to download music for offline listening across multiple devices and platforms.",
+    "size": 112,
+    "reviews": 89,
+    "ratingAvg": 4.5,
+    "downloads": 30,
+    "ratings": [
+      { "name": "1 star", "count": 4 },
+      { "name": "2 star", "count": 3 },
+      { "name": "3 star", "count": 6 },
+      { "name": "4 star", "count": 20 },
+      { "name": "5 star", "count": 56 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co/Wp6Wp6yF/thibault-penin-AWOl7qqsff-M-unsplash-1.jpg",
+    "title": "Netflix",
+    "companyName": "Netflix, Inc.",
+    "id": 10,
+    "description": "Netflix is the world's leading streaming entertainment service with over 200 million paid memberships in over 190 countries enjoying TV series, documentaries, feature films, and mobile games across multiple genres and languages. The service offers personalized recommendations, offline viewing, multiple user profiles, and original content produced by Netflix Studios.",
+    "size": 78,
+    "reviews": 67,
+    "ratingAvg": 4.3,
+    "downloads": 20,
+    "ratings": [
+      { "name": "1 star", "count": 3 },
+      { "name": "2 star", "count": 2 },
+      { "name": "3 star", "count": 5 },
+      { "name": "4 star", "count": 15 },
+      { "name": "5 star", "count": 42 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co/nMfV1p7c/alexander-shatov-ni-Uk-Im-Zc-SP8-unsplash-1.jpg",
+    "title": "YouTube",
+    "companyName": "Google LLC",
+    "id": 11,
+    "description": "YouTube is the world's largest video sharing platform where users can watch, like, share, comment, and upload videos. The app provides access to music videos, tutorials, vlogs, documentaries, live streams, and original content from creators worldwide. Features include YouTube Premium for ad-free viewing, YouTube Music, and YouTube Kids for family-friendly content.",
+    "size": 145,
+    "reviews": 123,
+    "ratingAvg": 4.1,
+    "downloads": 50,
+    "ratings": [
+      { "name": "1 star", "count": 8 },
+      { "name": "2 star", "count": 5 },
+      { "name": "3 star", "count": 10 },
+      { "name": "4 star", "count": 30 },
+      { "name": "5 star", "count": 70 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co/Kx4dBpxP/rubaitul-azad-q-K8-Tu-Z7-T9-N4-unsplash-1.jpg",
+    "title": "Google Maps",
+    "companyName": "Google LLC",
+    "id": 12,
+    "description": "Google Maps provides reliable real-time GPS navigation, traffic updates, and public transportation information. The app offers detailed maps, street view, indoor maps for malls and airports, and business information including reviews and photos. Features include offline maps, route planning for walking, driving, cycling, and public transport, and location sharing with friends and family.",
+    "size": 132,
+    "reviews": 98,
+    "ratingAvg": 4.3,
+    "downloads": 30,
+    "ratings": [
+      { "name": "1 star", "count": 4 },
+      { "name": "2 star", "count": 3 },
+      { "name": "3 star", "count": 8 },
+      { "name": "4 star", "count": 25 },
+      { "name": "5 star", "count": 58 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co/2YLytRB5/rubaitul-azad-W3-Z2-ZNs1y4-I-unsplash-1.jpg",
+    "title": "Gmail",
+    "companyName": "Google LLC",
+    "id": 13,
+    "description": "Gmail is an easy-to-use email app that saves you time and keeps your messages safe. The app offers real-time notifications, multiple account support, search functionality, spam protection, and organized inboxes. Features include smart replies, email scheduling, snooze options, and integration with other Google services like Drive, Calendar, and Meet for seamless productivity.",
+    "size": 45,
+    "reviews": 87,
+    "ratingAvg": 4.4,
+    "downloads": 50,
+    "ratings": [
+      { "name": "1 star", "count": 3 },
+      { "name": "2 star", "count": 2 },
+      { "name": "3 star", "count": 6 },
+      { "name": "4 star", "count": 20 },
+      { "name": "5 star", "count": 56 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co/Gf9rgjqg/rubaitul-azad-Yhg-Kun-Ty-Sks-unsplash-1.jpg",
+    "title": "Google Drive",
+    "companyName": "Google LLC",
+    "id": 14,
+    "description": "Google Drive is a safe place for all your files and puts them within reach from any smartphone, tablet, or computer. The cloud storage service offers 15GB of free storage with options to upgrade, file sharing and collaboration features, and integration with Google Docs, Sheets, and Slides. Files in Drive can be accessed offline and are protected with advanced security.",
+    "size": 67,
+    "reviews": 54,
+    "ratingAvg": 4.4,
+    "downloads": 50,
+    "ratings": [
+      { "name": "1 star", "count": 2 },
+      { "name": "2 star", "count": 1.5 },
+      { "name": "3 star", "count": 4 },
+      { "name": "4 star", "count": 12 },
+      { "name": "5 star", "count": 34.5 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co/Ng98FFV3/hassaan-here-VEiml7-S8xv-Q-unsplash-1.jpg",
+    "title": "Microsoft Word",
+    "companyName": "Microsoft Corporation",
+    "id": 15,
+    "description": "Microsoft Word is the world's most popular word processing app that lets you create, edit, view, and share documents with others quickly and easily. The mobile app offers robust formatting tools, templates, collaboration features, and cloud integration with OneDrive. Documents can be accessed across devices and shared with others for real-time co-authoring and editing.",
+    "size": 235,
+    "reviews": 43,
+    "ratingAvg": 4.6,
+    "downloads": 10,
+    "ratings": [
+      { "name": "1 star", "count": 1 },
+      { "name": "2 star", "count": 0.8 },
+      { "name": "3 star", "count": 2 },
+      { "name": "4 star", "count": 8 },
+      { "name": "5 star", "count": 31.2 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co/bRbsnX8C/rubaitul-azad-Gau-A0hi-Ew-Dk-unsplash-1.jpg",
+    "title": "Microsoft Excel",
+    "companyName": "Microsoft Corporation",
+    "id": 16,
+    "description": "Microsoft Excel is the powerful spreadsheet app that helps you organize, analyze, and visualize data with advanced formulas, charts, and formatting options. The mobile app allows creating and editing spreadsheets with full functionality, including formulas, tables, charts, and sorting features. Integration with OneDrive enables seamless collaboration and access across all your devices.",
+    "size": 228,
+    "reviews": 38,
+    "ratingAvg": 4.6,
+    "downloads": 10,
+    "ratings": [
+      { "name": "1 star", "count": 0.9 },
+      { "name": "2 star", "count": 0.7 },
+      { "name": "3 star", "count": 1.8 },
+      { "name": "4 star", "count": 7 },
+      { "name": "5 star", "count": 27.4 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co/pB4cQfRr/mariia-shalabaieva-V02us-4r-NE8-unsplash.jpg",
+    "title": "Zoom",
+    "companyName": "Zoom Video Communications, Inc.",
+    "id": 17,
+    "description": "Zoom is the leading video conferencing app for mobile devices that provides video and audio conferencing, collaboration, chat, and webinars across mobile, desktop, and room systems. The app supports up to 100 participants in free meetings, screen sharing, recording, virtual backgrounds, and integration with calendar systems. It's widely used for business, education, and social gatherings.",
+    "size": 156,
+    "reviews": 29,
+    "ratingAvg": 4.1,
+    "downloads": 30,
+    "ratings": [
+      { "name": "1 star", "count": 1.5 },
+      { "name": "2 star", "count": 1 },
+      { "name": "3 star", "count": 3 },
+      { "name": "4 star", "count": 7 },
+      { "name": "5 star", "count": 16.5 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co/nsBvqm4T/rubaitul-azad-J0eq-Dg-SQDYg-unsplash.jpg",
+    "title": "Amazon",
+    "companyName": "Amazon Mobile LLC",
+    "id": 18,
+    "description": "Amazon Shopping is the official mobile app for the world's largest online retailer, offering millions of products across categories like electronics, clothing, home goods, and more. The app provides personalized recommendations, deal notifications, price comparisons, order tracking, and secure payment options. Features include Amazon Prime benefits, Alexa integration, and visual search capabilities.",
+    "size": 89,
+    "reviews": 67,
+    "ratingAvg": 4.3,
+    "downloads": 20,
+    "ratings": [
+      { "name": "1 star", "count": 3 },
+      { "name": "2 star", "count": 2 },
+      { "name": "3 star", "count": 5 },
+      { "name": "4 star", "count": 15 },
+      { "name": "5 star", "count": 42 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co/Myc7yS84/mariia-shalabaieva-L-QMHKQxt-PI-unsplash-1.jpg",
+    "title": "Uber",
+    "companyName": "Uber Technologies, Inc.",
+    "id": 19,
+    "description": "Uber is a ridesharing app that connects riders with drivers in cities worldwide. The app allows users to request rides, track driver location, estimate fares, and pay electronically. Services include UberX, Uber Comfort, Uber Pool, and Uber Black. Additional features include ride scheduling, split fares, safety features, and integration with Uber Eats for food delivery services.",
+    "size": 134,
+    "reviews": 45,
+    "ratingAvg": 4.0,
+    "downloads": 30,
+    "ratings": [
+      { "name": "1 star", "count": 2.5 },
+      { "name": "2 star", "count": 1.8 },
+      { "name": "3 star", "count": 4 },
+      { "name": "4 star", "count": 12 },
+      { "name": "5 star", "count": 24.7 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co/nszMwFR4/buddha-elemental-3d-a-VWDopf-T5-w-unsplash-1.jpg",
+    "title": "Airbnb",
+    "companyName": "Airbnb, Inc.",
+    "id": 20,
+    "description": "Airbnb is a platform that connects travelers with hosts who offer unique accommodations worldwide, including apartments, villas, treehouses, and castles. The app allows users to search, book, and manage stays, communicate with hosts, and read reviews from other travelers. Features include instant booking, wish lists, experiences, and secure payment processing for memorable travel experiences.",
+    "size": 167,
+    "reviews": 23,
+    "ratingAvg": 4.5,
+    "downloads": 10,
+    "ratings": [
+      { "name": "1 star", "count": 0.8 },
+      { "name": "2 star", "count": 0.5 },
+      { "name": "3 star", "count": 1.5 },
+      { "name": "4 star", "count": 5 },
+      { "name": "5 star", "count": 15.17 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co/ZpPVsLs7/farhat-altaf-f-Q4-ESXr-p-NI-unsplash.jpg",
+    "title": "PayPal",
+    "companyName": "PayPal Mobile",
+    "id": 21,
+    "description": "PayPal is a secure digital wallet and online payment system that allows users to send and receive money, pay bills, and shop online. The app supports peer-to-peer payments, merchant transactions, money transfers to bank accounts, and cryptocurrency trading. Security features include purchase protection, fraud monitoring, and two-factor authentication for safe financial transactions worldwide.",
+    "size": 98,
+    "reviews": 34,
+    "ratingAvg": 4.2,
+    "downloads": 5,
+    "ratings": [
+      { "name": "1 star", "count": 1.5 },
+      { "name": "2 star", "count": 1 },
+      { "name": "3 star", "count": 3 },
+      { "name": "4 star", "count": 9 },
+      { "name": "5 star", "count": 19.5 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co/nNWd5xbH/mariia-shalabaieva-jt-Rkbt-UHsps-unsplash.jpg",
+    "title": "Discord",
+    "companyName": "Discord Inc.",
+    "id": 22,
+    "description": "Discord is a communication platform designed for creating communities where users can chat via text, voice, and video in private chats or large communities called servers. Originally popular with gamers, it now serves various interest groups. Features include screen sharing, file sharing, custom emojis, moderation tools, and integration with other platforms like Spotify and YouTube.",
+    "size": 123,
+    "reviews": 28,
+    "ratingAvg": 4.3,
+    "downloads": 50,
+    "ratings": [
+      { "name": "1 star", "count": 1 },
+      { "name": "2 star", "count": 0.8 },
+      { "name": "3 star", "count": 2 },
+      { "name": "4 star", "count": 6 },
+      { "name": "5 star", "count": 18.2 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co/Z61bKpPQ/dima-solomin-UKAVi-H-h-FMk-unsplash-1.jpg",
+    "title": "Pinterest",
+    "companyName": "Pinterest",
+    "id": 23,
+    "description": "Pinterest is a visual discovery engine for finding ideas like recipes, home and style inspiration, and more. Users create and manage theme-based image collections called boards, save Pins from websites, and discover new content through personalized recommendations. The app serves as a creative tool for planning projects, events, and collecting inspiration across various categories and interests.",
+    "size": 76,
+    "reviews": 31,
+    "ratingAvg": 4.4,
+    "downloads": 5,
+    "ratings": [
+      { "name": "1 star", "count": 1.2 },
+      { "name": "2 star", "count": 0.8 },
+      { "name": "3 star", "count": 2 },
+      { "name": "4 star", "count": 7 },
+      { "name": "5 star", "count": 20 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co/WNF2ynG6/eyestetix-studio-p-Zud-Vp-chc-Y-unsplash-1.jpg",
+    "title": "Shazam",
+    "companyName": "Apple Inc.",
+    "id": 24,
+    "description": "Shazam is a music identification app that can identify songs playing around you, providing song titles, artists, lyrics, and music videos. The app connects with Apple Music and Spotify to save and stream identified tracks, offers personalized recommendations, and features charts of trending songs. With one tap, users can discover new music and explore detailed information about recognized tracks.",
+    "size": 45,
+    "reviews": 19,
+    "ratingAvg": 4.6,
+    "downloads": 20,
+    "ratings": [
+      { "name": "1 star", "count": 0.5 },
+      { "name": "2 star", "count": 0.3 },
+      { "name": "3 star", "count": 1 },
+      { "name": "4 star", "count": 4 },
+      { "name": "5 star", "count": 13.2 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co/LXGLxfbc/ilgmyzin-m-SIFEZ8-WW1-M-unsplash-1.jpg",
+    "title": "Duolingo",
+    "companyName": "Duolingo",
+    "id": 25,
+    "description": "Duolingo is a free language learning platform that offers bite-sized lessons in over 30 languages through interactive exercises, speaking practice, and listening comprehension. The app uses gamification with points, levels, and achievements to make learning fun and engaging. Features include personalized learning paths, progress tracking, and offline lessons for continuous language practice anywhere.",
+    "size": 67,
+    "reviews": 25,
+    "ratingAvg": 4.7,
+    "downloads": 5,
+    "ratings": [
+      { "name": "1 star", "count": 0.4 },
+      { "name": "2 star", "count": 0.3 },
+      { "name": "3 star", "count": 0.8 },
+      { "name": "4 star", "count": 3 },
+      { "name": "5 star", "count": 20.5 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co/mCxbf57B/sunny-hassan-d-Ffgjk-Des44-unsplash-1.jpg",
+    "title": "Adobe Acrobat Reader",
+    "companyName": "Adobe",
+    "id": 26,
+    "description": "Adobe Acrobat Reader is the world's most trusted PDF reader and editor that lets you view, print, sign, and annotate PDF documents. The app offers tools for filling forms, adding comments, highlighting text, and drawing on documents. Features include cloud storage integration, document scanning from camera, PDF conversion, and secure digital signatures for professional document handling.",
+    "size": 289,
+    "reviews": 32,
+    "ratingAvg": 4.5,
+    "downloads": 30,
+    "ratings": [
+      { "name": "1 star", "count": 1 },
+      { "name": "2 star", "count": 0.8 },
+      { "name": "3 star", "count": 2 },
+      { "name": "4 star", "count": 7 },
+      { "name": "5 star", "count": 21.2 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co/C391hdgk/fab-zamp-VXk-X7l-Sc-ZFs-unsplash.jpg",
+    "title": "Waze",
+    "companyName": "Waze",
+    "id": 27,
+    "description": "Waze is a community-based traffic and navigation app that provides real-time road information, traffic alerts, police sightings, and optimal routes based on current conditions. The app uses input from millions of drivers to update traffic patterns, suggest faster alternatives, and warn about hazards. Features include voice-guided navigation, gas price comparisons, and ETA sharing with contacts.",
+    "size": 156,
+    "reviews": 27,
+    "ratingAvg": 4.2,
+    "downloads": 50,
+    "ratings": [
+      { "name": "1 star", "count": 1.2 },
+      { "name": "2 star", "count": 0.9 },
+      { "name": "3 star", "count": 2.5 },
+      { "name": "4 star", "count": 7 },
+      { "name": "5 star", "count": 15.4 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co/MkCgRkcL/rubaitul-azad-u-WAm-S4-M0-RWk-unsplash.jpg",
+    "title": "Canva",
+    "companyName": "Canva",
+    "id": 28,
+    "description": "Canva is a graphic design platform that makes design simple for everyone with templates for social media posts, presentations, posters, documents, and other visual content. The app offers drag-and-drop functionality, thousands of templates, stock photographs, fonts, and design elements. Features include team collaboration, brand kit creation, and export in various formats for professional designs.",
+    "size": 134,
+    "reviews": 18,
+    "ratingAvg": 4.7,
+    "downloads": 10,
+    "ratings": [
+      { "name": "1 star", "count": 0.3 },
+      { "name": "2 star", "count": 0.2 },
+      { "name": "3 star", "count": 0.6 },
+      { "name": "4 star", "count": 3 },
+      { "name": "5 star", "count": 13.9 }
+    ]
+  }
+]
