@@ -1,11 +1,11 @@
 import React from 'react';
 
-const navber = () => {
+const Apps = () => {
     return (
         <div>
-            <h1>Navber</h1>
+            <h1>Apps</h1>
         </div>
     );
 };
 
-export default navber;
+export default Apps;
