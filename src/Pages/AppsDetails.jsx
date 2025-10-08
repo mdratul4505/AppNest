@@ -7,6 +7,8 @@ import downloadImg from '../assets/icon-downloads.png';
 import ratengsImg from '../assets/icon-ratings.png';
 import reviewImg from '../assets/icon-review.png';
 
+
+
 const AppsDetails = () => {
   const { id } = useParams();
   const { apps } = useAppsData();
@@ -48,6 +50,7 @@ const AppsDetails = () => {
   };
 
   return (
+    
     <div className="w-10/12 mx-auto my-20">
       {/* card section */}
       <div className="flex gap-30">
