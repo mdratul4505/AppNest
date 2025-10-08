@@ -1,11 +1,15 @@
 import React from 'react';
 import downloadImg from '../assets/icon-downloads.png'
 import ratingAvgImg from '../assets/icon-ratings.png'
+import { Link } from 'react-router';
+
 const AppCard = ({app}) => {
-    const { image , title  , downloads, ratingAvg} = app
+    const { id, image , title  , downloads, ratingAvg} = app
     
     return (
-       <div className="card bg-base-100 shadow-sm hover:scale-105 transition border border-gray-200 ease-in-out">
+      <Link to={`/app/${id}`}
+      
+      className="card bg-base-100 shadow-sm hover:scale-105 transition border border-gray-200 ease-in-out">
   <figure>
     <img className='h-70 w-full p-4 rounded-4xl'
       src={image}
@@ -19,7 +23,7 @@ const AppCard = ({app}) => {
       <h5 className='flex justify-center items-center gap-2 font-semibold text-[#FF8811] px-4  rounded-3xl bg-amber-50'><img className='w-4' src={ratingAvgImg} alt="" /> {ratingAvg}</h5>
     </div>
   </div>
-</div>
+</Link>
     );
 };
 
