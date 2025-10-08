@@ -33,13 +33,13 @@ const Home = () => {
             {/* banner section */}
             <div className=" bg-gradient-to-br from-[#632EE3] to-[#9F62F2] py-5 md:py-10 lg:py-20 ">
                 <h1 className='text-white font-bold text-4xl md:text-5xl lg:text-6xl text-center'>Trusted by Millions, Built for You</h1>
-                <div className='flex gap-5 md:gap-10 lg:gap-20 justify-center mt-8 md:mt-12 lg:mt-16'>
+                <div className='text-center md:flex gap-5 md:gap-10 lg:gap-20 justify-center mt-8 md:mt-12 lg:mt-16'>
                     <div className='text-white '>
                         <h4 className='mb-2.5'>Total Downloads</h4>
                         <span className='font-semibold lg:font-bold text-3xl md:text-4xl lg:text-6xl'>29.6M</span>
                         <p className='mt-2.5'>21% more than last month</p>
                     </div>
-                    <div className='text-white'>
+                    <div className='text-white py-5'>
                         <h4 className='mb-2.5'>Total Reviews</h4>
                         <span className='font-semibold lg:font-bold text-3xl md:text-4xl lg:text-6xl'>906K</span>
                         <p className='mt-2.5'>46% more than last month</p>
@@ -57,7 +57,7 @@ const Home = () => {
                     <h1 className='font-bold text-5xl'>Trending Apps</h1>
                     <p className='text-gray-500 text-xl mt-5'>Explore All Trending Apps on the Market developed by us</p>
                 </div>
-                <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 w-11/12 mx-auto gap-6 my-16'>
+                <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 w-11/12 mx-auto gap-6 my-6 md:10 lg:my-16'>
                     {
                         featuredApps.map(app => <AppCard 
                         key={app.id}

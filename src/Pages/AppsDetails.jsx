@@ -53,12 +53,12 @@ const AppsDetails = () => {
 
   return (
     
-    <div className="w-10/12 mx-auto my-20">
+    <div className=" w-11/12 lg:w-10/12 mx-auto my-20">
       {/* card section */}
-      <div className="flex gap-30">
+      <div className="md:flex gap-0 md:gap-15 lg:gap-30">
         <div>
           <img
-            className="w-[350px] h-[300px] rounded-xl"
+            className="w-[350px] md:w-[250px] lg:w-[350px] h-[300px] md:h-[250px] lg:h-[350px] rounded-xl"
             src={image}
             alt={title}
           />
@@ -72,23 +72,23 @@ const AppsDetails = () => {
             </span>
           </h4>
 
-          <div className="border-t border-gray-200 flex my-9.5"></div>
+          <div className="border-t border-gray-200 flex my-5  lg:my-9.5"></div>
 
-          <div className="flex gap-20">
+          <div className="flex gap-20 md:gap-10 lg:gap-20">
             <div>
               <img className="w-8" src={downloadImg} alt="downloads" />
               <p className="py-1">Downloads</p>
-              <h4 className="text-3xl font-bold">{downloads}M</h4>
+              <h4 className="text-3xl md:text-2xl lg:text-3xl font-bold">{downloads}M</h4>
             </div>
             <div>
               <img className="w-8" src={ratengsImg} alt="ratings" />
               <p className="py-1">Average Ratings</p>
-              <h4 className="text-3xl font-bold">{ratingAvg}</h4>
+              <h4 className="text-3xl md:text-2xl lg:text-3xl font-bold">{ratingAvg}</h4>
             </div>
             <div>
               <img className="w-8" src={reviewImg} alt="reviews" />
               <p className="py-1">Total Reviews</p>
-              <h4 className="text-3xl font-bold">{reviews}k</h4>
+              <h4 className="text-3xl md:text-2xl lg:text-3xl font-bold">{reviews}k</h4>
             </div>
           </div>
 

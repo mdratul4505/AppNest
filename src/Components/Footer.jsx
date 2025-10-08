@@ -47,7 +47,7 @@ const Footer = () => {
     </div>
   </nav>
   <aside>
-    <p>Copyright © {new Date().getFullYear()} - All right reserved by MD: RATUL HASAN</p>
+    <p>Copyright © {new Date().getFullYear()} - All right reserved by <span className='font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#632EE3] to-[#9F62F2]'> MD: RATUL HASAN</span></p>
   </aside>
 </footer>
     );
