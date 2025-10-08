@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import downloadImg from '../assets/icon-downloads.png';
 import ratengsImg from '../assets/icon-ratings.png';
+ import { ToastContainer, toast } from 'react-toastify';
+ import 'react-toastify/dist/ReactToastify.css';
 
 
 
@@ -26,10 +28,12 @@ const Installation = () => {
 
     const handleRemove = (id) => {
     const existingList = JSON.parse(localStorage.getItem('Installed')) || [];
-    const updatedList = existingList.filter(a => a.id !== id); 
-    localStorage.setItem('Installed', JSON.stringify(updatedList)); 
+    const removedApp = existingList.find(a => a.id === id); 
+    const updatedList = existingList.filter(a => a.id !== id);
+    
+    localStorage.setItem('Installed', JSON.stringify(updatedList));
     setInstalled(updatedList); 
-    alert('App Uninstalled Successfully!');
+    toast.success(`${removedApp?.title} Uninstalled Successfully!✅`);
   };
     return (
         <div className='w-11/12 my-20 mx-auto'>
@@ -87,7 +91,7 @@ const Installation = () => {
 
             </div>
 
-
+                <ToastContainer /> 
 
         </div>
     );

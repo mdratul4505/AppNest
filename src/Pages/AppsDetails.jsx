@@ -6,6 +6,8 @@ import useAppsData from '../Hooks/useApps';
 import downloadImg from '../assets/icon-downloads.png';
 import ratengsImg from '../assets/icon-ratings.png';
 import reviewImg from '../assets/icon-review.png';
+import { ToastContainer, toast } from 'react-toastify';
+ import 'react-toastify/dist/ReactToastify.css';
 
 
 
@@ -40,13 +42,13 @@ const AppsDetails = () => {
     const existingList = JSON.parse(localStorage.getItem('Installed')) || [];
 
     const isDuplicate = existingList.some(a => a.id === app.id);
-    if (isDuplicate) return alert(`${title} is already installed!`);
+    if (isDuplicate) return 
 
     const updatedList = [...existingList, app];
     localStorage.setItem('Installed', JSON.stringify(updatedList));
 
     setInstalled(true);
-    alert(`${title} installed successfully!`);
+    toast.success(`${app.title} installed successfully! ✅`);
   };
 
   return (
@@ -105,6 +107,7 @@ const AppsDetails = () => {
       </div>
 
       <div className="border border-gray-300 my-8"></div>
+      <ToastContainer /> 
     </div>
   );
 };
