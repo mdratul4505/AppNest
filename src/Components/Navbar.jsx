@@ -6,7 +6,7 @@ import logo from '../assets/logo.png';
 
 const Navbar = () => {
   return (
-    <div className="navbar bg-base-100 shadow-sm px-5">
+    <div className="navbar bg-base-100 shadow-sm px-20">
 
 
       <div className="navbar-start">

@@ -8,13 +8,10 @@ const Apps = () => {
     const [search, setSearch] = useState('')
     const [searchLoading, setSearchLoading] = useState(false)
     const [searchedApps, setSearchedApps] = useState([])
-
-    
     useEffect(() => {
-        if (!loading) {
-            setSearchedApps(apps)
-        }
-    }, [apps, loading])
+        
+        setSearchedApps(apps)
+    }, [apps]) 
 
     
     useEffect(() => {
@@ -38,6 +35,7 @@ const Apps = () => {
         }
     }, [search, apps])
 
+   
     if (loading) {
         return <Loader count={28} />
     }
@@ -74,6 +72,7 @@ const Apps = () => {
                 </label>
             </div>
 
+           
             {searchLoading ? (
                 <Loader count={12} />
             ) : searchedApps.length > 0 ? (
