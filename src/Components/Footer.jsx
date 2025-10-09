@@ -1,8 +1,13 @@
 import React from 'react';
+import logo from '../assets/logo.png'
 
 const Footer = () => {
     return (
         <footer className="footer footer-horizontal footer-center bg-base-200 text-base-content rounded p-10">
+          <div className='flex gap-5'>
+            <img className='w-15' src={logo} alt="" />
+            <h2 className='font-bold text-2xl lg:text-3xl text-transparent bg-clip-text bg-gradient-to-r from-[#632EE3] to-[#9F62F2]'>HERO.IO</h2>
+          </div>
   <nav className="grid grid-flow-col gap-4">
     <a className="link link-hover">About us</a>
     <a className="link link-hover">Contact</a>

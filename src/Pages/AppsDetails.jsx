@@ -1,15 +1,14 @@
 
-
 import React, { useState, useEffect } from 'react';
-import { useParams } from 'react-router';
+import { Link, useParams } from 'react-router';
 import useAppsData from '../Hooks/useApps';
 import downloadImg from '../assets/icon-downloads.png';
 import ratengsImg from '../assets/icon-ratings.png';
 import reviewImg from '../assets/icon-review.png';
 import { ToastContainer, toast } from 'react-toastify';
- import 'react-toastify/dist/ReactToastify.css';
-
-
+import 'react-toastify/dist/ReactToastify.css';
+import errorImg from '../assets/App-Error.png'
+import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
 
 const AppsDetails = () => {
   const { id } = useParams();
@@ -19,30 +18,30 @@ const AppsDetails = () => {
   const [installed, setInstalled] = useState(false);
 
   useEffect(() => {
-  
     if (!app) return;
-
     const existingList = JSON.parse(localStorage.getItem('Installed')) || [];
     const isInstalled = existingList.some(a => a.id === app.id);
     setInstalled(isInstalled);
-  }, [app]); 
+  }, [app]);
 
- 
   if (!app) {
     return (
-      <div className="py-10 text-gray-500 flex items-center justify-center">
-        <h1>Loading...</h1>
+      <div className="flex flex-col items-center justify-center h-[70vh] text-center">
+        <img src={errorImg} alt="" />
+        <h1 className='font-bold text-3xl md:text-4xl lg:text-5xl '>OPPS!! APP NOT FOUND</h1>
+        <p className='text-gray-500 lg:text-xl py-2 md:py-3 lg:py-4'>The App you are requesting is not found on our system.  please try another apps</p>
+        <Link to='/' className='btn bg-gradient-to-tr from-[#632EE3] to-[#9F62F2] text-white font-semibold px-10'>Back to Home !</Link>
+        
       </div>
     );
   }
 
-  const { title, image, ratingAvg, downloads, reviews, companyName, size } = app;
+  const { title, image, ratingAvg, downloads, reviews, companyName, size, description, ratings } = app;
 
   const handleAddToInstallation = () => {
     const existingList = JSON.parse(localStorage.getItem('Installed')) || [];
-
     const isDuplicate = existingList.some(a => a.id === app.id);
-    if (isDuplicate) return 
+    if (isDuplicate) return;
 
     const updatedList = [...existingList, app];
     localStorage.setItem('Installed', JSON.stringify(updatedList));
@@ -52,9 +51,7 @@ const AppsDetails = () => {
   };
 
   return (
-    
-    <div className=" w-11/12 lg:w-10/12 mx-auto my-20">
-      {/* card section */}
+    <div className="w-11/12 lg:w-10/12 mx-auto my-10 md:my-15 lg:my-20">
       <div className="md:flex gap-0 md:gap-15 lg:gap-30">
         <div>
           <img
@@ -63,6 +60,7 @@ const AppsDetails = () => {
             alt={title}
           />
         </div>
+
         <div className="flex-1">
           <h1 className="text-3xl font-bold">{title}</h1>
           <h4 className="text-xl font-semibold">
@@ -72,7 +70,7 @@ const AppsDetails = () => {
             </span>
           </h4>
 
-          <div className="border-t border-gray-200 flex my-5  lg:my-9.5"></div>
+          <div className="border-t border-gray-200 flex my-5 lg:my-9.5"></div>
 
           <div className="flex gap-20 md:gap-10 lg:gap-20">
             <div>
@@ -107,9 +105,37 @@ const AppsDetails = () => {
       </div>
 
       <div className="border border-gray-300 my-8"></div>
-      <ToastContainer /> 
+
+      {/* Ratings Chart */}
+      <div className="my-5 md:my-8 lg:my-10">
+        <h3 className="text-2xl md:text-3xl font-bold mb-4">Ratings</h3>
+        <div className="bg-base-100 border rounded-xl p-3 md:p-4 lg:p-6 h-80">
+          <ResponsiveContainer width="100%" height="100%">
+            <BarChart
+              data={ratings}
+              margin={{ top: 5, right: 30, left: 20, bottom: 5 }}
+            >
+              <CartesianGrid strokeDasharray="3 3" />
+              <XAxis dataKey="name" />
+              <YAxis />
+              <Tooltip />
+              <Legend />
+              <Bar dataKey="count" fill="#632EE3" radius={[10, 10, 0, 0]} />
+            </BarChart>
+          </ResponsiveContainer>
+        </div>
+      </div>
+
+      {/* Description */}
+      <div>
+        <div className="text-2xl md:text-3xl font-bold">Description</div>
+        <div className="text-gray-600 mt-2 md:mt-3 lg:mt-5">{description}</div>
+      </div>
+
+      <ToastContainer />
     </div>
   );
 };
 
 export default AppsDetails;
+
