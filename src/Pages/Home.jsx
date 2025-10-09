@@ -5,15 +5,17 @@ import AppStore from '../assets/Group.png'
 import heroImg from '../assets/hero.png'
 import useAppsData from '../Hooks/useApps';
 import AppCard from '../Components/AppCard';
+import Loader from '../Components/Loader';
 
 const Home = () => {
-    const {apps} = useAppsData();
+    const {apps, loading} = useAppsData();
     
     const featuredApps = apps.slice(0, 8)
     
     
     return (
         <div className=''>
+            {/* <Loader count='8'></Loader> */}
             <div className='text-center mt-10 md:14 lg:mt-20'>
                 <h1 className='font-bold text-4xl md:text-5xl lg:text-7xl'>We Build <br />
                     <span className='text-transparent bg-clip-text bg-gradient-to-r from-[#632EE3] to-[#9F62F2]'>Productive</span> Apps</h1>
@@ -21,8 +23,8 @@ const Home = () => {
                 <p className='text-gray-600 my-8'>At HERO.IO, we craft innovative apps designed to make everyday life simpler, smarter, and more exciting.<br /> Our goal is to turn your ideas into digital experiences that truly make an impact.</p>
 
                 <div className='flex items-center justify-center my-8 gap-5 '>
-                    <Link className='flex items-center gap-2.5 btn' to='https://play.google.com/store/games?hl=en'><img src={playStore} alt="" /> Google Play</Link>
-                    <Link className='flex items-center gap-2.5 btn' to=''> <img src={AppStore} alt="" /> App Store</Link>
+                    <Link target="_blank" className='flex items-center gap-2.5 btn' to='https://play.google.com/store/games?hl=en'><img src={playStore} alt="" /> Google Play</Link>
+                    <Link target='blank' className='flex items-center gap-2.5 btn' to='https://www.apple.com/app-store/'> <img src={AppStore} alt="" /> App Store</Link>
                 </div>
 
             </div>
@@ -57,7 +59,10 @@ const Home = () => {
                     <h1 className='font-bold text-5xl'>Trending Apps</h1>
                     <p className='text-gray-500 text-xl mt-5'>Explore All Trending Apps on the Market developed by us</p>
                 </div>
-                <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 w-11/12 mx-auto gap-6 my-6 md:10 lg:my-16'>
+                {
+                    loading? (
+                        <Loader count={8} />
+                    ):<div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 w-11/12 mx-auto gap-6 my-6 md:10 lg:my-16'>
                     {
                         featuredApps.map(app => <AppCard 
                         key={app.id}
@@ -65,6 +70,7 @@ const Home = () => {
                         ></AppCard>)
                     }
                 </div>
+                }
 
                 <div className='flex justify-center'>
                     <Link to='/apps'><span className='btn flex justify-center px-10 font-medium text-white bg-gradient-to-tr from-[#632EE3] to-[#9F62F2]'>Show All</span></Link>

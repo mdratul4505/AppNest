@@ -118,10 +118,11 @@ const Navbar = () => {
       <div className="navbar-end">
 
         <Link
+         target='blank'
           to="https://github.com/mdratul4505"
           className="btn bg-gradient-to-tr from-[#632EE3] to-[#9F62F2]"
         >
-          <Github className="bg-white rounded-full mr-2" />
+          <Github  className="bg-white rounded-full mr-2" />
           <span className="text-white font-medium">Contribute</span>
         </Link>
       </div>

@@ -1,16 +1,48 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import useAppsData from '../Hooks/useApps';
 import AppCard from '../Components/AppCard';
-
+import Loader from '../Components/Loader';
 
 const Apps = () => {
-    const { apps } = useAppsData()
+    const { apps, loading } = useAppsData()
     const [search, setSearch] = useState('')
-    const tram = search.trim().toLocaleLowerCase()
-    const searchedApps = tram ? apps.filter(app => app.title.toLocaleLowerCase().includes(tram)) : apps
+    const [searchLoading, setSearchLoading] = useState(false)
+    const [searchedApps, setSearchedApps] = useState([])
+
+    
+    useEffect(() => {
+        if (!loading) {
+            setSearchedApps(apps)
+        }
+    }, [apps, loading])
+
+    
+    useEffect(() => {
+        if (search.trim()) {
+            setSearchLoading(true)
+            
+            
+            const timer = setTimeout(() => {
+                const tram = search.trim().toLowerCase()
+                const filtered = apps.filter(app => 
+                    app.title.toLowerCase().includes(tram)
+                )
+                setSearchedApps(filtered)
+                setSearchLoading(false)
+            }, 500) 
+
+            return () => clearTimeout(timer)
+        } else {
+            setSearchedApps(apps)
+            setSearchLoading(false)
+        }
+    }, [search, apps])
+
+    if (loading) {
+        return <Loader count={28} />
+    }
 
     return (
-
         <div>
             <div className='text-center my-8 md:12 lg:my-16'>
                 <h1 className='text-4xl md:text-5xl lg:text-6xl font-bold'>Our All Applications</h1>
@@ -32,12 +64,19 @@ const Apps = () => {
                             <path d="m21 21-4.3-4.3"></path>
                         </g>
                     </svg>
-                    <input value={search}
-                        onChange={(e) => setSearch(e.target.value)} type="search" required placeholder="Search" />
+                    <input 
+                        value={search}
+                        onChange={(e) => setSearch(e.target.value)} 
+                        type="search" 
+                        required 
+                        placeholder="Search" 
+                    />
                 </label>
             </div>
 
-            {searchedApps.length > 0 ? (
+            {searchLoading ? (
+                <Loader count={12} />
+            ) : searchedApps.length > 0 ? (
                 <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 w-11/12 mx-auto gap-6 my-16'>
                     {searchedApps.map((app) => (
                         <AppCard key={app.id} app={app} />
@@ -45,13 +84,13 @@ const Apps = () => {
                 </div>
             ) : (
                 <div className='text-center my-16'>
-                    <div className='text-6xl font-bold '>No Apps Found</div>
+                    <div className='text-6xl font-bold'>No Apps Found</div>
                     <button
                         onClick={() => setSearch('')}
-                        className='btn text-white px-8 mt-10 bg-gradient-to-tr from-[#632EE3] to-[#9F62F2] '>
-                        Show All </button>
-                </div> 
-
+                        className='btn text-white px-8 mt-10 bg-gradient-to-tr from-[#632EE3] to-[#9F62F2]'>
+                        Show All
+                    </button>
+                </div>
             )}
         </div>
     );

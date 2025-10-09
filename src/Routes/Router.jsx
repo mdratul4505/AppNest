@@ -8,6 +8,7 @@ import Error from "../Pages/Error";
 import AppsDetails from "../Pages/AppsDetails";
 
 
+
 const router = createBrowserRouter([
   {
     path: "/",
