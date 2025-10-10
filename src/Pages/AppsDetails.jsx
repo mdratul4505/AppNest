@@ -72,7 +72,7 @@ const AppsDetails = () => {
 
           <div className="border-t border-gray-200 flex my-5 lg:my-9.5"></div>
 
-          <div className="flex gap-20 md:gap-10 lg:gap-20">
+          <div className="flex gap-15 md:gap-10 lg:gap-20">
             <div>
               <img className="w-8" src={downloadImg} alt="downloads" />
               <p className="py-1">Downloads</p>
@@ -125,7 +125,7 @@ const AppsDetails = () => {
           </ResponsiveContainer>
         </div>
       </div>
-
+      
       {/* Description */}
       <div>
         <div className="text-2xl md:text-3xl font-bold">Description</div>
